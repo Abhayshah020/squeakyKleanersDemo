@@ -45,6 +45,7 @@ export default function ServicesSection() {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.7 }}
+                    viewport={{ once: true, amount: 0.4 }}
                     className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 text-center"
                 >
                     We Always Provide The{" "}
@@ -55,6 +56,7 @@ export default function ServicesSection() {
                 <motion.p
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, amount: 0.4 }}
                     transition={{ duration: 0.7, delay: 0.2 }}
                     className="text-gray-600 text-center mb-12 max-w-full sm:max-w-lg md:max-w-xl"
                 >
@@ -68,6 +70,7 @@ export default function ServicesSection() {
                             key={idx}
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true, amount: 0.4 }}
                             transition={{ duration: 0.6, delay: idx * 0.2 }}
                             className="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center text-center hover:scale-102 cursor-pointer transition-transform"
                         >

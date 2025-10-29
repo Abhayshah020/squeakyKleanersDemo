@@ -27,7 +27,8 @@ export default function HeroSection() {
             <div className="relative z-10 flex flex-col items-center text-center w-full max-w-[700px] px-4 md:px-6">
                 <motion.h1
                     initial={{ opacity: 0, y: 50 }}
-                    animate={{ opacity: 1, y: 0 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, amount: 0.4 }}
                     transition={{ duration: 1 }}
                     className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-snug sm:leading-tight md:leading-tight tracking-tight"
                 >
@@ -37,7 +38,8 @@ export default function HeroSection() {
 
                 <motion.p
                     initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{ once: true, amount: 0.4 }}
                     transition={{ delay: 0.3, duration: 1 }}
                     className="mt-4 sm:mt-6 text-base sm:text-lg md:text-xl text-gray-300 max-w-full"
                 >
@@ -46,7 +48,8 @@ export default function HeroSection() {
 
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, amount: 0.4 }}
                     transition={{ delay: 0.4, duration: 1 }}
                     className="flex flex-col sm:flex-row gap-4 sm:gap-6 mt-6 sm:mt-8"
                 >

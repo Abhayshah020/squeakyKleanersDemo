@@ -52,7 +52,9 @@ export default function Testimonials() {
                 <div className="relative overflow-hidden w-full">
                     <motion.div
                         className="flex gap-3"
-                        animate={{ x: ["0%", "-100%"] }}
+                        initial={{ x: "10%" }}
+                        viewport={{ once: true, amount: 0.4 }}
+                        whileInView={{ x: ["10%", "-100%"] }}
                         transition={{
                             repeat: Infinity,
                             repeatType: "loop",

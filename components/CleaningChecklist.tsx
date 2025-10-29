@@ -75,16 +75,13 @@ export default function CleaningChecklist() {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
+                    viewport={{ once: true, amount: 0.4 }}
                     className="text-3xl capitalize sm:text-4xl md:text-5xl font-bold text-gray-800 mb-10 sm:mb-12 text-center"
                 >
                     We offers{" "}
                     <span className="text-yellow-500 underline decoration-yellow-300/60 decoration-[6px]">
                         21 commercial
                     </span>{" "}
-                    and{" "}
-                    <span className="text-yellow-500 underline decoration-yellow-300/60 decoration-[6px]">
-                        9 residential{" "}
-                    </span>
                     cleaning services.
                 </motion.h2>
 
@@ -97,7 +94,7 @@ export default function CleaningChecklist() {
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.6, delay: idx * 0.2 }}
-                            viewport={{ once: true }}
+                            viewport={{ once: true, amount: 0.4 }}
                             className="bg-white rounded-2xl shadow-lg p-4 sm:p-6"
                         >
                             <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-blue-600 mb-3 sm:mb-4">

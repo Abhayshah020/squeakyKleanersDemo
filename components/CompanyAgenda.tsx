@@ -12,7 +12,7 @@ export default function CompanyAgenda() {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
-                    viewport={{ once: true }}
+                    viewport={{ once: true, amount: 0.4 }}
                     className="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
                 >
                     Our Agenda
@@ -23,7 +23,7 @@ export default function CompanyAgenda() {
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     transition={{ duration: 1.2 }}
-                    viewport={{ once: true }}
+                    viewport={{ once: true, amount: 0.4 }}
                     className="text-lg md:text-xl text-gray-700 leading-relaxed mb-12"
                 >
                     At{" "}
@@ -34,6 +34,7 @@ export default function CompanyAgenda() {
                             backgroundSize: "100% 100%",
                             transition: { duration: 1.2, ease: "easeInOut" },
                         }}
+                        viewport={{ once: true, amount: 0.4 }}
                         style={{
                             backgroundImage: "linear-gradient(120deg, #3b82f6 0%, #60a5fa 100%)",
                             backgroundRepeat: "no-repeat",
@@ -48,6 +49,7 @@ export default function CompanyAgenda() {
                     <motion.span
                         className="text-blue-500 font-semibold"
                         whileInView={{ scale: [1, 1.05, 1], transition: { duration: 1 } }}
+                        viewport={{ once: true, amount: 0.4 }}
                     >
                         transform spaces
                     </motion.span>{" "}
@@ -78,7 +80,7 @@ export default function CompanyAgenda() {
                             initial={{ opacity: 0, x: -30 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.5, delay: index * 0.2 }}
-                            viewport={{ once: true }}
+                            viewport={{ once: true, amount: 0.4 }}
                             className="flex items-start space-x-4"
                         >
                             <CheckCircle2 className="text-blue-600 mt-1 flex-shrink-0" size={26} />
