@@ -75,10 +75,20 @@ export default function CleaningChecklist() {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
-                    className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-10 sm:mb-12"
+                    className="text-3xl capitalize sm:text-4xl md:text-5xl font-bold text-gray-800 mb-10 sm:mb-12 text-center"
                 >
-                    Squeaky Kleaners Master Cleaning Checklist
+                    We offers{" "}
+                    <span className="text-yellow-500 underline decoration-yellow-300/60 decoration-[6px]">
+                        21 commercial
+                    </span>{" "}
+                    and{" "}
+                    <span className="text-yellow-500 underline decoration-yellow-300/60 decoration-[6px]">
+                        9 residential{" "}
+                    </span>
+                    cleaning services.
                 </motion.h2>
+
+
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 text-left">
                     {checklist.map((section, idx) => (

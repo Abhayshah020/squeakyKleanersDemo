@@ -118,7 +118,7 @@ export default function KeepInTouch() {
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.97 }}
                         type="submit"
-                        className="w-full sm:w-auto bg-yellow-400 text-gray-900 font-semibold px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg shadow-md hover:bg-yellow-300 transition-all"
+                        className="w-full cursor-pointer sm:w-auto bg-yellow-400 text-gray-900 font-semibold px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg shadow-md hover:bg-yellow-300 transition-all"
                     >
                         Send Message
                     </motion.button>

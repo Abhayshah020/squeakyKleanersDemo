@@ -34,7 +34,7 @@ export default function NavMenu() {
                     <motion.button
                         whileHover={{ scale: 1.03 }}
                         whileTap={{ scale: 0.95 }}
-                        className="hidden md:inline bg-gradient-to-r from-blue-500 to-blue-600 text-white px-5 py-2 rounded-full shadow-lg font-semibold transition-all"
+                        className="hidden cursor-pointer md:inline bg-gradient-to-r from-blue-500 to-blue-600 text-white px-5 py-2 rounded-full shadow-lg font-semibold transition-all"
                     >
                         BOOK ONLINE
                     </motion.button>
